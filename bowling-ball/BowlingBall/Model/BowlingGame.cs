@@ -95,7 +95,7 @@ namespace BowlingBall.Model
         {
             int result = 0;
             CalculateBounseScore();
-            for (int i = 0; i < FramesBuilder.DEFAULT_FRAME; i++)
+            for (int i = 0; i < FramesBuilder.DEFAULT_FRAME && i < Frames.Count(); i++)
             {
                 result += Frames[i].TotalScore;
             }
